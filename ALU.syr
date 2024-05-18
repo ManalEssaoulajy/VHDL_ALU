@@ -1,0 +1,179 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.41 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.41 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : Automotive CoolRunner2
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : ALU.lso
+verilog2001                        : YES
+safe_implementation                : No
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd" in Library work.
+Entity <fulladder_ami> compiled.
+Entity <fulladder_ami> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd" in Library work.
+Entity <ALU> compiled.
+Entity <ALU> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd" line 75: Mux is complete : default of case is discarded
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <fulladder_ami> (Architecture <behavioral>).
+Entity <fulladder_ami> analyzed. Unit <fulladder_ami> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fulladder_ami>.
+    Related source file is "C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd".
+    Found 1-bit xor3 for signal <sum>.
+Unit <fulladder_ami> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <Result>.
+    Found 4-bit xor2 for signal <$n0000> created at line 74.
+Unit <ALU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor3                                            : 4
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor3                                            : 4
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <fulladder_ami> ...
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : Automotive CoolRunner2
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 99
+#      AND2                        : 36
+#      AND3                        : 5
+#      INV                         : 30
+#      OR2                         : 16
+#      OR3                         : 4
+#      XOR2                        : 8
+# IO Buffers                       : 16
+#      IBUF                        : 11
+#      OBUF                        : 5
+=========================================================================
+CPU : 5.98 / 6.40 s | Elapsed : 6.00 / 6.00 s
+ 
+--> 
+
+Total memory usage is 154492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

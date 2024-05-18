@@ -1,0 +1,30 @@
+Pin Freeze File:  version I.24
+
+A2C32A44VQ XA2C32A-6-VQ44
+A<0> S:PIN32
+A<1> S:PIN31
+A<2> S:PIN30
+A<3> S:PIN29
+B<0> S:PIN28
+B<1> S:PIN27
+B<2> S:PIN23
+B<3> S:PIN22
+Carry_in S:PIN21
+Op<0> S:PIN20
+Op<1> S:PIN19
+Carry_out S:PIN37
+Result<0> S:PIN38
+Result<1> S:PIN33
+Result<2> S:PIN34
+Result<3> S:PIN36
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 Result<0> Carry_out Result<3> Result<2>
+		 Result<1>
+PARTITION FB1_13 N_PZ_25 N_PZ_15 N_PZ_11 Mmux_Result_I2_Result11
+		
+
+

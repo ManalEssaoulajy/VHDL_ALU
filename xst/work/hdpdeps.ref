@@ -1,0 +1,13 @@
+V3 7
+FL C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd 2024/05/17.09:03:48 I.24
+EN work/fulladder_ami 1715936917   FL C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/fulladder_ami/Behavioral 1715936918 \
+      FL C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd EN work/fulladder_ami 1715936917
+FL C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd 2024/05/17.09:06:49 I.24
+EN work/ALU 1715937014             FL C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/ALU/Behavioral 1715937015  FL C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd EN work/ALU 1715937014 \
+      CP fulladder_ami

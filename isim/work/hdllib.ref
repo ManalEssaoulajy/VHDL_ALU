@@ -1,0 +1,6 @@
+AR alu behavioral C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd sub00/vhpl03 1715936956
+EN test2 NULL C:/Users/DELL/Desktop/VHDL/ALU4/test2.vhw sub00/vhpl04 1715937051
+EN fulladder_ami NULL C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd sub00/vhpl00 1715936953
+AR test2 testbench_arch C:/Users/DELL/Desktop/VHDL/ALU4/test2.vhw sub00/vhpl05 1715937052
+AR fulladder_ami behavioral C:/Users/DELL/Desktop/VHDL/ALU4/fulladder_ami.vhd sub00/vhpl01 1715936954
+EN alu NULL C:/Users/DELL/Desktop/VHDL/ALU4/ALU.vhd sub00/vhpl02 1715936955

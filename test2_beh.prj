@@ -1,0 +1,3 @@
+vhdl work "fulladder_ami.vhd"
+vhdl work "ALU.vhd"
+vhdl work "test2.vhw"

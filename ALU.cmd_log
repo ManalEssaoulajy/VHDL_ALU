@@ -1,0 +1,6 @@
+xst -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" -intstyle ise -ifn ALU.xst -ofn ALU.syr
+ngdbuild -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" -intstyle ise -dd _ngo -i -p acr2 ALU.ngc ALU.ngd
+cpldfit -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 ALU.ngd
+XSLTProcess -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" ALU_build.xml
+tsim -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" -intstyle ise ALU ALU.nga
+taengine -ise "C:/Users/DELL/Desktop/VHDL/ALU4/ALU4" -intstyle ise -f ALU -w --format html1 -l C:/Users/DELL/Desktop/VHDL/ALU4/ALU_html/tim/timing_report.htm
