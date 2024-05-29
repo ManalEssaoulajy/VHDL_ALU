@@ -5,8 +5,8 @@ This project implements an Arithmetic Logic Unit (ALU) on an FPGA using Xilinx V
 
 ## Features
 
-- **Logical Operations**: AND, OR, XOR, NOT
--
+- **Logical Operations**: AND, OR,summ
+
 
 ## Requirements
 - **Hardware**: FPGA Development Board
